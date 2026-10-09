@@ -1,0 +1,641 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A fitness studio website concept with strength programmes, an interactive weekly timetable and trial session preview.">
+    <meta name="theme-color" content="#101211">
+    <title>
+      Move Studio — Strength
+      &
+      Movement Concept
+    </title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer>
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">
+      Skip to content
+    </a>
+    <header class="site-header">
+      <div class="wrap header-inner">
+        <a class="brand" href="#" aria-label="Move Studio home">
+          MOVE
+          <span>
+            STUDIO
+          </span>
+        </a>
+        <button class="menu-toggle" aria-controls="navigation" aria-expanded="false">
+          Menu
+        </button>
+        <nav class="navigation" id="navigation" aria-label="Main navigation">
+          <a href="#programmes">
+            Programmes
+          </a>
+          <a href="#schedule">
+            Timetable
+          </a>
+          <a href="#membership">
+            Membership
+          </a>
+          <a href="#contact" class="button primary">
+            Try a session
+          </a>
+        </nav>
+      </div>
+    </header>
+    <main id="main">
+      <section class="hero">
+        <div class="wrap hero-layout">
+          <div class="hero-copy">
+            <p class="eyebrow">
+              Strength. Energy. Your kind of progress.
+            </p>
+            <h1>
+              SHOW UP.
+              <br>
+              GET STRONG.
+              <br>
+              <span>
+                KEEP MOVING.
+              </span>
+            </h1>
+            <p>
+              Small-group training. Focused coaching.
+              <br>
+              A space to build strength at your own pace.
+            </p>
+            <div class="hero-actions">
+              <a href="#contact" class="button primary">
+                Find your first session
+              </a>
+              <a href="#programmes" class="button outline">
+                Explore programmes
+              </a>
+            </div>
+            <div class="hero-facts">
+              <span>
+                01
+                <small>
+                  BEGINNER FRIENDLY
+                </small>
+              </span>
+              <span>
+                12
+                <small>
+                  PEOPLE PER CLASS
+                </small>
+              </span>
+              <span>
+                45
+                <small>
+                  MINUTES OF FOCUS
+                </small>
+              </span>
+            </div>
+          </div>
+          <div class="hero-photo">
+            <img src="assets/training.jpg" alt="Athlete preparing a dumbbell lift in a dark strength studio" width="1536" height="1024" fetchpriority="high">
+            <div class="photo-caption">
+              <span>
+                LESS DISTRACTION.
+                <br>
+                MORE INTENTION.
+              </span>
+              <small>
+                THE MOVE STUDIO CONCEPT
+              </small>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="ticker">
+        <div class="wrap">
+          BUILD STRENGTH
+          <span>
+            ·
+          </span>
+          FIND YOUR RHYTHM
+          <span>
+            ·
+          </span>
+          MOVE WITH PURPOSE
+        </div>
+      </div>
+      <section class="section wrap" id="programmes">
+        <div class="section-top">
+          <div>
+            <p class="eyebrow">
+              01 / Find your focus
+            </p>
+            <h2>
+              TRAIN YOUR WAY.
+            </h2>
+          </div>
+          <p>
+            Three ways to move. Every session includes clear guidance and options for different levels.
+          </p>
+        </div>
+        <div class="grid-three programmes">
+          <article>
+            <span class="programme-number">
+              01 / STRENGTH
+            </span>
+            <h3>
+              STRONG
+              <br>
+              FOUNDATIONS
+            </h3>
+            <p>
+              Build confidence with squats, hinges, presses and pulls. Technique comes first, load follows.
+            </p>
+            <ul>
+              <li>
+                Guided resistance training
+              </li>
+              <li>
+                Progress at your own pace
+              </li>
+              <li>
+                45-minute sessions
+              </li>
+            </ul>
+            <button class="text-button" data-programme="strength">
+              Explore strength
+            </button>
+          </article>
+          <article class="featured-programme">
+            <span class="programme-number">
+              02 / CONDITIONING
+            </span>
+            <h3>
+              ENERGY
+              <br>
+              IN MOTION
+            </h3>
+            <p>
+              Intervals, functional movement and just enough challenge to leave you feeling energised.
+            </p>
+            <ul>
+              <li>
+                Whole-body circuits
+              </li>
+              <li>
+                Adjustable intensity
+              </li>
+              <li>
+                45-minute sessions
+              </li>
+            </ul>
+            <button class="text-button" data-programme="conditioning">
+              Explore conditioning
+            </button>
+          </article>
+          <article>
+            <span class="programme-number">
+              03 / MOBILITY
+            </span>
+            <h3>
+              MOVE
+              <br>
+              BETTER
+            </h3>
+            <p>
+              Slow down, improve control and give your body space to move with confidence.
+            </p>
+            <ul>
+              <li>
+                Mobility
+                &
+                active recovery
+              </li>
+              <li>
+                Controlled movement
+              </li>
+              <li>
+                45-minute sessions
+              </li>
+            </ul>
+            <button class="text-button" data-programme="mobility">
+              Explore mobility
+            </button>
+          </article>
+        </div>
+      </section>
+      <section class="schedule-section" id="schedule">
+        <div class="wrap section">
+          <div class="section-top">
+            <div>
+              <p class="eyebrow">
+                02 / Make time for yourself
+              </p>
+              <h2>
+                YOUR WEEK.
+                <br>
+                YOUR SESSION.
+              </h2>
+            </div>
+            <p>
+              Pick a day to explore the sample schedule. Choose a session to preview your trial enquiry.
+            </p>
+          </div>
+          <div class="day-tabs" role="tablist" aria-label="Sample weekly timetable">
+            <button role="tab" id="day-mon" aria-controls="day-panel" aria-selected="true" tabindex="0" data-day="mon">
+              MON
+            </button>
+            <button role="tab" id="day-tue" aria-controls="day-panel" aria-selected="false" tabindex="-1" data-day="tue">
+              TUE
+            </button>
+            <button role="tab" id="day-wed" aria-controls="day-panel" aria-selected="false" tabindex="-1" data-day="wed">
+              WED
+            </button>
+            <button role="tab" id="day-thu" aria-controls="day-panel" aria-selected="false" tabindex="-1" data-day="thu">
+              THU
+            </button>
+            <button role="tab" id="day-fri" aria-controls="day-panel" aria-selected="false" tabindex="-1" data-day="fri">
+              FRI
+            </button>
+            <button role="tab" id="day-sat" aria-controls="day-panel" aria-selected="false" tabindex="-1" data-day="sat">
+              SAT
+            </button>
+          </div>
+          <div id="day-panel" role="tabpanel" aria-labelledby="day-mon" tabindex="0">
+            <div class="session-list" id="session-list">
+            </div>
+          </div>
+          <p class="schedule-note">
+            Illustrative timetable · All times shown in Malaysia time · Not live availability
+          </p>
+        </div>
+      </section>
+      <section class="section wrap studio-section">
+        <div class="studio-copy">
+          <p class="eyebrow">
+            A little structure. A lot of support.
+          </p>
+          <h2>
+            YOU DON'T NEED
+            <br>
+            TO BE FIT
+            <br>
+            <span>
+              TO START.
+            </span>
+          </h2>
+          <p>
+            Arrive as you are. Your coach guides the session, helps you find the right level and keeps the focus on what you can do today.
+          </p>
+          <div class="studio-points">
+            <div>
+              <strong>
+                Small groups
+              </strong>
+              <span>
+                More room for individual guidance.
+              </span>
+            </div>
+            <div>
+              <strong>
+                Clear progression
+              </strong>
+              <span>
+                Build skill before adding intensity.
+              </span>
+            </div>
+            <div>
+              <strong>
+                A real-life routine
+              </strong>
+              <span>
+                Sessions that fit around your week.
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="studio-image">
+          <img src="assets/training.jpg" alt="Focused dumbbell training in the Move Studio concept space" width="1536" height="1024" loading="lazy">
+          <span class="studio-image-tag">
+            YOUR FIRST REP STARTS HERE.
+          </span>
+        </div>
+      </section>
+      <section class="section membership-section" id="membership">
+        <div class="wrap">
+          <div class="section-top">
+            <div>
+              <p class="eyebrow">
+                03 / Build your routine
+              </p>
+              <h2>
+                MAKE IT A HABIT.
+              </h2>
+            </div>
+            <div class="pricing-switch" aria-label="Choose payment period">
+              <button data-billing="monthly" aria-pressed="true">
+                Monthly
+              </button>
+              <button data-billing="quarterly" aria-pressed="false">
+                3 months
+              </button>
+            </div>
+          </div>
+          <div class="grid-three plans">
+            <article>
+              <p class="eyebrow">
+                Find your rhythm
+              </p>
+              <h3>
+                STARTER
+              </h3>
+              <div class="price">
+                <span data-price="starter">
+                  RM 160
+                </span>
+                <small data-period>
+                  / month
+                </small>
+              </div>
+              <p>
+                One focused session each week.
+              </p>
+              <ul>
+                <li>
+                  4 sessions per month
+                </li>
+                <li>
+                  All three programme types
+                </li>
+                <li>
+                  Coach-guided training
+                </li>
+              </ul>
+              <button class="button outline" data-plan="Starter">
+                Choose Starter
+              </button>
+            </article>
+            <article class="popular">
+              <span class="plan-badge">
+                THE STEADY ROUTINE
+              </span>
+              <p class="eyebrow">
+                Keep showing up
+              </p>
+              <h3>
+                REGULAR
+              </h3>
+              <div class="price">
+                <span data-price="regular">
+                  RM 280
+                </span>
+                <small data-period>
+                  / month
+                </small>
+              </div>
+              <p>
+                Build consistency, twice a week.
+              </p>
+              <ul>
+                <li>
+                  8 sessions per month
+                </li>
+                <li>
+                  All three programme types
+                </li>
+                <li>
+                  Coach-guided training
+                </li>
+              </ul>
+              <button class="button primary" data-plan="Regular">
+                Choose Regular
+              </button>
+            </article>
+            <article>
+              <p class="eyebrow">
+                More room to move
+              </p>
+              <h3>
+                COMMITTED
+              </h3>
+              <div class="price">
+                <span data-price="committed">
+                  RM 360
+                </span>
+                <small data-period>
+                  / month
+                </small>
+              </div>
+              <p>
+                A flexible, three-session routine.
+              </p>
+              <ul>
+                <li>
+                  12 sessions per month
+                </li>
+                <li>
+                  All three programme types
+                </li>
+                <li>
+                  Coach-guided training
+                </li>
+              </ul>
+              <button class="button outline" data-plan="Committed">
+                Choose Committed
+              </button>
+            </article>
+          </div>
+          <p class="schedule-note">
+            Example pricing only. No payments or memberships are processed. Sessions reset monthly; sample plans do not include rollover.
+          </p>
+        </div>
+      </section>
+      <section class="section wrap faq">
+        <p class="eyebrow">
+          Before your first session
+        </p>
+        <h2>
+          GOOD QUESTIONS.
+        </h2>
+        <details>
+          <summary>
+            I'm a beginner. Can I join?
+          </summary>
+          <p>
+            Yes. The studio concept is built around coached sessions with movement options for different levels. A real studio would discuss your experience and any relevant limitations before training.
+          </p>
+        </details>
+        <details>
+          <summary>
+            What should I bring?
+          </summary>
+          <p>
+            Comfortable training clothes, suitable shoes, a water bottle and a small towel. Aim to arrive a little early to settle in.
+          </p>
+        </details>
+        <details>
+          <summary>
+            Does selecting a session book a place?
+          </summary>
+          <p>
+            No. This is a portfolio demo. Selecting a session fills the sample enquiry form, but does not reserve a place, take payment or send your details.
+          </p>
+        </details>
+      </section>
+      <section class="section contact-section" id="contact">
+        <div class="wrap contact-layout">
+          <div>
+            <p class="eyebrow">
+              Your first step
+            </p>
+            <h2>
+              LET'S GET
+              <br>
+              <span>
+                MOVING.
+              </span>
+            </h2>
+            <p>
+              Pick a programme and tell us what you're looking for. See how a trial enquiry would work.
+            </p>
+            <div class="contact-details">
+              <strong>
+                Kuala Lumpur, Malaysia
+              </strong>
+              <span>
+                Sample studio hours: Mon–Fri, 7am–9pm
+                <br>
+                Saturday, 9am–2pm
+              </span>
+            </div>
+            <span class="demo-label">
+              Portfolio concept · example content
+            </span>
+          </div>
+          <form id="inquiry-form">
+            <div class="form-grid">
+              <label>
+                Your name
+                <input name="name" autocomplete="name" required maxlength="100" placeholder="Alex Tan">
+              </label>
+              <label>
+                Email address
+                <input type="email" name="email" autocomplete="email" required maxlength="200" placeholder="you@example.com">
+              </label>
+              <label class="full">
+                Your focus
+                <select name="programme" id="programme-select" required>
+                  <option value="">
+                    Choose a programme
+                  </option>
+                  <option value="strength">
+                    Strong Foundations
+                  </option>
+                  <option value="conditioning">
+                    Energy in Motion
+                  </option>
+                  <option value="mobility">
+                    Move Better
+                  </option>
+                </select>
+              </label>
+              <label class="full">
+                Selected session or plan
+                <input id="selected-session" name="session" readonly placeholder="Optional — choose from the timetable or plans">
+              </label>
+              <label class="full">
+                What would you like to work on?
+                <textarea name="message" maxlength="2000" placeholder="Your goals, experience or any questions…">
+                </textarea>
+              </label>
+            </div>
+            <p class="form-note">
+              Demo only. Your details are not sent, saved or used to make a booking.
+            </p>
+            <button class="button primary" type="submit">
+              Preview trial enquiry
+            </button>
+            <p class="form-status" id="form-status" role="status" hidden>
+            </p>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="wrap footer-inner">
+        <a class="brand" href="#">
+          MOVE
+          <span>
+            STUDIO
+          </span>
+        </a>
+        <p>
+          Concept project · Images are AI-generated.
+          <br>
+          All classes, prices and studio details are illustrative.
+        </p>
+        <span class="footer-credit">
+          Powered by
+          <strong>
+            Lucraft Studio
+          </strong>
+        </span>
+      </div>
+    </footer>
+    <dialog id="programme-dialog" aria-labelledby="programme-title">
+      <div class="dialog-top">
+        <p class="eyebrow">
+          Find your focus
+        </p>
+        <button class="close-button" data-close>
+          Close
+        </button>
+      </div>
+      <h2 class="dialog-title" id="programme-title">
+      </h2>
+      <p id="programme-description">
+      </p>
+      <dl class="detail-list">
+        <div>
+          <dt>
+            Duration
+          </dt>
+          <dd>
+            45 minutes
+          </dd>
+        </div>
+        <div>
+          <dt>
+            Group size
+          </dt>
+          <dd>
+            Up to 12 people
+          </dd>
+        </div>
+        <div>
+          <dt>
+            Level
+          </dt>
+          <dd>
+            Options for all levels
+          </dd>
+        </div>
+        <div>
+          <dt>
+            Style
+          </dt>
+          <dd id="programme-style">
+          </dd>
+        </div>
+      </dl>
+      <h3>
+        Inside the session
+      </h3>
+      <ul id="programme-features">
+      </ul>
+      <button class="button primary" id="try-programme">
+        Choose this programme
+      </button>
+    </dialog>
+  </body>
+</html>
